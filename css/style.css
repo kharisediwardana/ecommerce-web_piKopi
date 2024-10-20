@@ -1,0 +1,60 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins" sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  /* grouping into navbar group */
+  display: flex;
+  /* rata horizontal */
+  justify-content: space-between;
+  /* rata vertical */
+  align-items: center;
+  /* agar bisa di buka di semua layar teta[ 7% */
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0, 6);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(242, 214, 176);
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar a {
+  color: #895b2e;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
